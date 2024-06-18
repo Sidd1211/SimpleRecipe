@@ -1,0 +1,162 @@
+/* :root {
+    --clr-nutmeg: hsl(14, 45%, 36%);
+    --clr-dark-raspberry: hsl(332, 51%, 32%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-rose-white: hsl(33, 100%, 98%);
+    --clr-eggshell: hsl(30, 54%, 90%);
+    --clr-light-grey: hsl(30, 18%, 87%);
+    --clr-wenge-brown: hsl(30, 10%, 34%);
+    --clr-dark-charcoal: hsl(24, 5%, 18%);
+    --ff-heading: "Young Serif", serif;
+    --ff-body
+    : "Outfit", sans-serif;
+} */
+
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 44.5rem;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 5rem 0;
+    color: hsl(24, 5%, 18%);
+}
+.header_img {
+    max-width: 41rem;
+}
+.header_img img {
+    width: 100%;
+    border-radius: 0.75rem;
+}
+.heading {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.heading h1 {
+    font-family: "Young Serif", serif;
+}
+.sub_heading {
+    font-family: "Outfit", sans-serif;
+    margin: 1rem 0;
+    line-height: 1.5rem;
+}
+.prep_time {
+    margin: 2rem 0;
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(33, 100%, 98%);
+    /* border-radius: 1rem; */
+    padding: 1.5rem 0;
+}
+.pret_time_title {
+    margin: 0 1.5rem;
+    font-size: 1.2rem;
+    color: hsl(332, 51%, 32%);
+}
+.prep_time_list {
+    margin: 0 2.5rem;
+}
+.prep_time_list li {
+    margin: 0.6rem;
+    padding-left: 1rem;
+    color: hsl(30, 10%, 34%);
+}
+.prep_time_list li::marker {
+    color: hsl(332, 51%, 32%);
+}
+.ingredients h3 {
+    font-size: 1.5rem;
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+}
+.ingredients ul {
+    margin: 1.5rem;
+    font-family: "Outfit", sans-serif;
+}
+.ingredients li {
+    margin: 0.6rem 0;
+    padding-left: 1rem;
+}
+.ingredients li::marker {
+    color: hsl(14, 45%, 36%);
+}
+.instructions {
+    border-top: 1px solid hsl(30, 18%, 87%);
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-top: 2rem;
+}
+.instructions h3 {
+    font-size: 1.5rem;
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+}
+.instructions ol {
+    margin: 1.5rem;
+    font-family: "Outfit", sans-serif;
+}
+.instructions li {
+    margin: 0.6rem 0;
+    padding-left: 1rem;
+    line-height: 1.5rem;
+}
+.instructions li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+.nutrition h3 {
+    font-size: 1.5rem;
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    margin: 1.5rem 0;
+}
+.nutrition table {
+    width: 100%;
+    font-family: "Outfit", sans-serif;
+    border-collapse: collapse;
+}
+.nutrition caption {
+    font-family: "Outfit", sans-serif;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.nutrition table tr {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.nutrition td {
+    width: 50%;
+    padding: 0.75rem 2rem;
+}
+.nutrition th {
+    text-align: left;
+    color: hsl(14, 45%, 36%);
+}
+.nutrition table tr:last-child {
+    border-bottom: none;
+}
+@media (max-width: 414px) {
+    .container {
+        margin: 0;
+    }
+    .header_img {
+        margin: -2rem -2rem 0;
+    }
+    .header_img img {
+        border-radius: 0;
+    }
+    .heading h1 {
+        line-height: 1;
+    }
+}
+
